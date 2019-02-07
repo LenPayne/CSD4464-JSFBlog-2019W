@@ -175,7 +175,7 @@ public class Posts {
                 pstmt.setInt(3, currentPost.getId());
                 pstmt.executeUpdate();
             } else {
-                String sql = "INSERT INTO posts (user_id, title, created_time, contents) VALUES (?,?,NOW(),?)";
+                String sql = "INSERT INTO posts (user_id, title, created_time, contents) VALUES (?,?,CURRENT_TIMESTAMP,?)";
                 PreparedStatement pstmt = conn.prepareStatement(sql);
                 pstmt.setInt(1, user.getId());
                 pstmt.setString(2, currentPost.getTitle());

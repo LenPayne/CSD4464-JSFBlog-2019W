@@ -1,27 +1,23 @@
 # JSF Blog Sample
 
 This sample has been prepared as a basic JavaServer Faces Blog. It is built in
-NetBeans on GlassFish with MySQL.
-
-The current version will work as-deployed within the Lambton College network and
-the server IPRO is addressable, but to deploy this sample at home you will need
-to set up a new database.
+NetBeans on GlassFish with JavaDB.
 
 The following SQL is provided for reference:
 
     CREATE TABLE users (
-        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
         username VARCHAR(255) NOT NULL UNIQUE,
         passhash VARCHAR(255) NOT NULL
     );
-    
+
     CREATE TABLE posts (
-        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
         user_id INT NOT NULL,
         title VARCHAR(255) NOT NULL UNIQUE,
-        created_time DATETIME NOT NULL,
-        contents TEXT,
-        FOREIGN KEY posts(user_id) REFERENCES users(id)
+        created_time TIMESTAMP NOT NULL,
+        contents LONG VARCHAR,
+        FOREIGN KEY (user_id) REFERENCES users(id)
     );
     
     -- Optional Sample Data
@@ -30,4 +26,4 @@ The following SQL is provided for reference:
         VALUES('user', 'E0478D09678A204E0DFD77C3F12500C08E03345E');
     
     INSERT INTO posts (user_id, title, created_time, contents)
-        VALUES (1, 'Sample Post', NOW(), 'Lorem ipsum dolor sit amet.');
+        VALUES (1, 'Sample Post', CURRENT_TIMESTAMP, 'Lorem ipsum dolor sit amet.');

@@ -1,0 +1,31 @@
+Thu Feb 07 13:25:00 EST 2019 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Thu Feb 07 13:25:00 EST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0168-c934-a57b-00002996d5f7 
+on database directory /Users/len/NetBeansProjects/CSD4464-BuildIt6/blog with class loader sun.misc.Launcher$AppClassLoader@6f94fa3e 
+Loaded from file:/Applications/NetBeans/glassfish-4.1.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_201-b09
+user.dir=/Applications/NetBeans/glassfish-4.1.1/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.14.2
+derby.system.home=/Users/len/NetBeansProjects/CSD4464-BuildIt6
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Feb 07 13:25:01 EST 2019:
+Shutting down instance a816c00e-0168-c934-a57b-00002996d5f7 on database directory /Users/len/NetBeansProjects/CSD4464-BuildIt6/blog with class loader sun.misc.Launcher$AppClassLoader@6f94fa3e 
+Thu Feb 07 13:25:01 EST 2019 Thread[DRDAConnThread_3,5,main] (DATABASE = blog), (DRDAID = {2}), Database 'blog' shutdown.
+----------------------------------------------------------------
+Thu Feb 07 13:25:54 EST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance 560740aa-0168-c934-a57b-00002996d5f7 
+on database directory /Users/len/NetBeansProjects/CSD4464-BuildIt6/blog with class loader sun.misc.Launcher$AppClassLoader@6f94fa3e 
+Loaded from file:/Applications/NetBeans/glassfish-4.1.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_201-b09
+user.dir=/Applications/NetBeans/glassfish-4.1.1/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.14.2
+derby.system.home=/Users/len/NetBeansProjects/CSD4464-BuildIt6
+Database Class Loader started - derby.database.classpath=''

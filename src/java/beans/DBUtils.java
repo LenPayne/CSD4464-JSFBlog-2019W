@@ -64,17 +64,17 @@ public class DBUtils {
      */
     public static Connection getConnection() throws SQLException {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("org.apache.derby.jdbc.ClientDriver");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(DBUtils.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
-        String hostname = "IPRO";
-        String port = "3306";
-        String dbname = "JSFBlog";
-        String username = "JSFBlog";
-        String password = "Feb2017";
-        String jdbc = String.format("jdbc:mysql://%s:%s/%s", hostname, port, dbname);
+        String hostname = "localhost";
+        String port = "1527";
+        String dbname = "blog";
+        String username = "blog";
+        String password = "blog";
+        String jdbc = String.format("jdbc:derby://%s:%s/%s", hostname, port, dbname);
         return DriverManager.getConnection(jdbc, username, password);
     }
 }
